@@ -1,0 +1,459 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Satyanand | Portfolio</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+scroll-behavior:smooth;
+}
+
+/* SOFT BACKGROUND */
+
+body{
+background:linear-gradient(135deg,#e8f0ff,#f6f9ff);
+color:#333;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:white;
+box-shadow:0 4px 15px rgba(0,0,0,0.08);
+}
+
+nav h2{
+color:#2563eb;
+}
+
+/* HERO */
+
+.hero{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:80px;
+padding:100px 20px;
+flex-wrap:wrap;
+}
+
+/* FLOATING PROFILE */
+
+.profile{
+width:220px;
+height:220px;
+border-radius:50%;
+border:6px solid white;
+box-shadow:0 10px 30px rgba(0,0,0,0.15);
+animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+0%{transform:translateY(0px);}
+50%{transform:translateY(-15px);}
+100%{transform:translateY(0px);}
+}
+
+.hero-text h1{
+font-size:60px;
+color:#2563eb;
+}
+
+.hero-text p{
+margin-top:10px;
+max-width:350px;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+border-radius:30px;
+background:#3b82f6;
+color:white;
+text-decoration:none;
+}
+
+/* CARD */
+
+.card{
+max-width:800px;
+margin:40px auto;
+background:white;
+padding:35px;
+border-radius:20px;
+box-shadow:0 8px 25px rgba(0,0,0,0.1);
+}
+
+/* SKILLS */
+
+.skill{
+margin:20px 0;
+}
+
+.bar{
+height:10px;
+background:#e5e7eb;
+border-radius:10px;
+overflow:hidden;
+}
+
+.fill{
+height:10px;
+background:#3b82f6;
+}
+
+/* HOBBIES */
+
+.hobbies{
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+margin-top:20px;
+font-size:18px;
+}
+
+/* SOCIAL */
+
+.social{
+text-align:center;
+}
+
+.like-btn{
+padding:10px 20px;
+border:none;
+border-radius:30px;
+background:#ef4444;
+color:white;
+font-size:18px;
+cursor:pointer;
+}
+
+/* COMMENTS */
+
+.comment-box{
+margin-top:20px;
+}
+
+.comment-box input{
+padding:10px;
+width:70%;
+border-radius:8px;
+border:1px solid #ccc;
+}
+
+.comment-box button{
+padding:10px 18px;
+border:none;
+background:#3b82f6;
+color:white;
+border-radius:8px;
+}
+
+.comments{
+margin-top:20px;
+}
+
+/* SHARE */
+
+.share{
+margin-top:20px;
+}
+
+.share a{
+display:inline-flex;
+align-items:center;
+gap:8px;
+margin:10px;
+text-decoration:none;
+color:#2563eb;
+font-weight:bold;
+background:#f1f5ff;
+padding:8px 12px;
+border-radius:8px;
+}
+
+.share a:hover{
+background:#e0e7ff;
+}
+
+/* INSTAGRAM PROFILE LINK */
+
+.instagram{
+margin-top:20px;
+text-align:center;
+}
+
+.instagram a{
+display:inline-flex;
+align-items:center;
+gap:10px;
+text-decoration:none;
+color:#e1306c;
+font-weight:bold;
+}
+
+/* FOLLOW CARD */
+
+.follow-card{
+text-align:center;
+margin-top:20px;
+padding:20px;
+background:#f9f9ff;
+border-radius:15px;
+}
+
+/* INSTAGRAM FEED */
+
+.insta-feed{
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+margin-top:20px;
+}
+
+.insta-feed img{
+width:150px;
+height:150px;
+object-fit:cover;
+border-radius:10px;
+}
+
+/* FLOATING INSTAGRAM BUTTON */
+
+.floating-insta{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#E1306C;
+padding:12px;
+border-radius:50%;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+.floating-insta img{
+width:28px;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+margin-top:60px;
+padding:20px;
+background:#2563eb;
+color:white;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<h2>Satyanand</h2>
+</nav>
+
+<section class="hero">
+
+<img src="photo.png" class="profile">
+
+<div class="hero-text">
+
+<h1>Hello 👋</h1>
+
+<p id="typing"></p>
+
+<a href="#contact" class="btn">Contact</a>
+
+</div>
+
+</section>
+
+<div class="card">
+
+<h2>About Me</h2>
+
+<p>Hello! My name is <b style="color:#2563eb;">Satyanand Kumar</b>.  
+I enjoy learning technology and building websites.</p>
+
+<p>I love reading books, drawing and spending time with my family.</p>
+
+<p>My goal is to create a successful future and make my parents proud.</p>
+
+</div>
+
+<div class="card">
+
+<h2>My Skills</h2>
+
+<div class="skill">HTML
+<div class="bar"><div class="fill" style="width:70%"></div></div>
+</div>
+
+<div class="skill">Creativity
+<div class="bar"><div class="fill" style="width:80%"></div></div>
+</div>
+
+<div class="skill">Learning
+<div class="bar"><div class="fill" style="width:90%"></div></div>
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>My Hobbies</h2>
+
+<div class="hobbies">
+<div>📚 Reading</div>
+<div>🎨 Drawing</div>
+<div>👨‍👩‍👦 Family Time</div>
+</div>
+
+</div>
+
+<div class="card social">
+
+<h2>Do you like this website?</h2>
+
+<button class="like-btn" onclick="likeWebsite()">❤️ Like</button>
+
+<p>Likes : <span id="likeCount">0</span></p>
+
+<p>Visitors : <span id="visitCount">0</span></p>
+
+<div class="comment-box">
+<input id="commentInput" placeholder="Write a comment">
+<button onclick="addComment()">Post</button>
+</div>
+
+<div class="comments" id="comments"></div>
+
+<div class="share">
+
+<h3>Share this website</h3>
+
+<a href="https://wa.me/?text=Check%20this%20website" target="_blank">
+<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" width="24">
+WhatsApp
+</a>
+
+<a href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank">
+<img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" width="24">
+Facebook
+</a>
+
+<a href="#" onclick="copyLink()">
+<img src="https://cdn-icons-png.flaticon.com/512/60/60577.png" width="24">
+Copy Link
+</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>Follow Me on Instagram</h2>
+
+<div class="instagram">
+<a href="https://instagram.com/_credible_fellow_" target="_blank">
+<img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" width="28">
+_credible_fellow_
+</a>
+</div>
+
+<div class="follow-card">
+<p>Follow me on Instagram for updates and posts.</p>
+</div>
+
+<div class="insta-feed">
+<img src="https://picsum.photos/200?1">
+<img src="https://picsum.photos/200?2">
+<img src="https://picsum.photos/200?3">
+</div>
+
+</div>
+
+<a class="floating-insta" href="https://instagram.com/_credible_fellow_" target="_blank">
+<img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
+</a>
+
+<footer>
+© 2026 Satyanand
+</footer>
+
+<script>
+
+/* typing */
+
+let text="Welcome to my personal portfolio website.";
+let i=0;
+
+function type(){
+if(i<text.length){
+document.getElementById("typing").innerHTML+=text.charAt(i);
+i++;
+setTimeout(type,40);
+}
+}
+type();
+
+/* like */
+
+let likes=localStorage.getItem("likes")||0;
+document.getElementById("likeCount").innerText=likes;
+
+function likeWebsite(){
+likes++;
+localStorage.setItem("likes",likes);
+document.getElementById("likeCount").innerText=likes;
+}
+
+/* visitor */
+
+let visits=localStorage.getItem("visits")||0;
+visits++;
+localStorage.setItem("visits",visits);
+document.getElementById("visitCount").innerText=visits;
+
+/* comments */
+
+function addComment(){
+let input=document.getElementById("commentInput");
+let comment=input.value;
+if(comment=="") return;
+let div=document.createElement("p");
+div.textContent=comment;
+document.getElementById("comments").appendChild(div);
+input.value="";
+}
+
+/* copy link */
+
+function copyLink(){
+navigator.clipboard.writeText(window.location.href);
+alert("Link copied!");
+}
+
+</script>
+
+</body>
+</html>
+```
